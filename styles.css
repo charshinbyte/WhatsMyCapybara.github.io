@@ -1,0 +1,132 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#title-screen {
+    background-image: url('StartMenu.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+
+    width: 100%;         /* Full width of its container */
+    max-width: 600px;    /* Prevents it from becoming too wide on large screens */
+    height: 95vh;       /* Full height of the viewport */
+    max-height: 100vh;   /* Ensures it doesn’t overflow the viewport height */
+    border-radius: 12px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 0 auto;      /* Center it horizontally */
+}
+
+
+#start-btn {
+    background-image: url('Start.png');
+    background-size: 100%; /* 2× scaling */
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 120px;
+    width: 180px;
+    border: none;
+    cursor: pointer;
+
+    border: none;
+    outline: none;
+    margin-top: 150px;
+    background-color: transparent; /* optional but safe */
+}
+
+#start-btn:hover {
+    transform: scale(1.1); /* Scales the button by 10% */
+    transition: transform 0.3s ease-in-out; /* Smooth transition effect */
+}
+
+
+.quiz-container {
+    background-image: url('tavern.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    width: 100%;         /* Full width of its container */
+    max-width: 600px;    /* Prevents it from becoming too wide on large screens */
+    height: 95vh;       /* Full height of the viewport */
+    max-height: 100vh;   /* Ensures it doesn’t overflow the viewport height */
+    border-radius: 12px;
+
+    display: flex;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#question-container p{
+    font-size: 20px;
+    font-family: 'Baloo 2', sans-serif;
+    font-weight: 900;
+    color: #7d7159;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    margin-left: 25px;
+    margin-right: 25px;
+    background-color: #fef9e7;
+    padding: 10px;
+    padding-left: 14px;
+    padding-right: 14px;
+    display: flex;
+    border: 5px solid transparent;
+    border-radius: 12px;
+    text-align: center;
+    min-width: 510px;
+
+}
+
+.answer-button {
+    font-family: 'Baloo 2', sans-serif;
+    font-size: 17px; /* Adjust as needed */
+    font-weight: 800;
+    border: none;
+    outline: none;
+    margin-top: 15px;
+    background-color: #feed9d; /* optional but safe */
+    color: #917d40;
+    padding: 10px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    display: flex;
+    border: 2px solid transparent;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-left: 5%;
+    margin-right: 5%;
+    min-width: 510px;
+    width: 90%;
+
+}
+
+.answer-button:hover {
+    transform: scale(1.05); /* Scales the button by 10% */
+    transition: transform 0.3s ease-in-out; /* Smooth transition effect */
+
+}
+
+label {
+    display: block;
+    margin: 5px 0;
+}
+
+.result {
+    text-align: center;
+    margin-top: 20px;
+}
