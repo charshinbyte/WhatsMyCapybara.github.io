@@ -16,11 +16,12 @@
         }
 
         .background {
-            width: 500px;
-            height: 780px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: white; /* Keep the inner color white */
+            width: 100%;         /* Full width of its container */
+            max-width: 600px;    /* Prevents it from becoming too wide on large screens */
+            height: 100vh;       /* Full height of the viewport */
+            border-radius: 12px;
+            padding-top: 30px;
+
             background-position: center;
             background-repeat: no-repeat;
             position: relative;
@@ -28,11 +29,8 @@
             margin-right: auto; 
             border-width: 10px;
             border-style: double;
-
-            /* Gradient border */
             border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
             border-image-slice: 1;
-            border-radius: 30px; /* Rounded corners */
             overflow: hidden; /* Prevent content from overflowing the border */
         }
 
@@ -46,9 +44,7 @@
         img {
             width: 250px;
             image-rendering: pixelated;
-            /* border: 0px;
-            box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
-            border-radius: 12px;  Rounded corners: 18px radius */
+
         }
 
         #population{

@@ -138,7 +138,7 @@ label {
 /* Media Queries for Responsive Font Sizes */
 @media (max-width: 768px) {
     #question-container p {
-        font-size: 18px; /* Smaller font size for tablets */
+        font-size: 17px; /* Smaller font size for tablets */
     }
 
     .answer-button {
@@ -148,10 +148,10 @@ label {
 
 @media (max-width: 480px) {
     #question-container p {
-        font-size: 16px; /* Smaller font size for mobile phones */
+        font-size: 14px; /* Smaller font size for mobile phones */
     }
 
     .answer-button {
-        font-size: 14px; /* Smaller font size for mobile phones */
+        font-size: 12px; /* Smaller font size for mobile phones */
     }
 }
