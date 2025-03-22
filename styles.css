@@ -41,9 +41,8 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     border-width: 5px;
-    border-style: double;
-    border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
-    border-image-slice: 1;
+    /* border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
+    border-image-slice: 1; */
 
     width: 100%;         /* Full width of its container */
     max-width: 500px;    /* Prevents it from becoming too wide on large screens */
