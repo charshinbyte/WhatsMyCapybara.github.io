@@ -35,6 +35,8 @@ body {
 }
 
 #result-screen {
+    margin-left: auto;
+    margin-right: auto;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -46,12 +48,11 @@ body {
     width: 100%;         /* Full width of its container */
     max-width: 500px;    /* Prevents it from becoming too wide on large screens */
     height: 100vh;       /* Full height of the viewport */
-    max-height: 690px;   /* Ensures it doesn't overflow the viewport height */
+    max-height: 650px;   /* Ensures it doesn't overflow the viewport height */
     border-radius: 12px;
 
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
     
 }

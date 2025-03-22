@@ -173,29 +173,35 @@
         const yellowTypes = ["ISTP", "ISFP", "ESTP", "ESFP"];
 
         const backgroundDiv = document.getElementById("result-screen");
+        const bodyDiv = document.body;
 
         if (purpleTypes.includes(resultUpper)) {
             backgroundDiv.style.backgroundColor = "#B19CD9";  
             backgroundDiv.style.borderImage = "linear-gradient(to left, #743ad5, #d53a9d) 1";
             backgroundDiv.style.borderImageSlice = 1;
+            bodyDiv.style.backgroundColor= "#B19CD999";
+
         }
         
         else if (greenTypes.includes(resultUpper)) {
             backgroundDiv.style.backgroundColor = "#C1E1C1";    
             backgroundDiv.style.borderImage = "linear-gradient(to left, #00b09b, #96c93d ) 1";
             backgroundDiv.style.borderImageSlice = 1;
+            bodyDiv.style.backgroundColor= "#C1E1C199";
 
         }
         else if (yellowTypes.includes(resultUpper)) {
             backgroundDiv.style.backgroundColor = "#FFEE8C"; 
             backgroundDiv.style.borderImage = "linear-gradient(to left, #f7b733, #CAC531) 1";
             backgroundDiv.style.borderImageSlice = 1;
-   
+            bodyDiv.style.backgroundColor= "#FFEE8C99";
+
         }
         else if (blueTypes.includes(resultUpper)) {
             backgroundDiv.style.backgroundColor = "#C8D9F0";    
             backgroundDiv.style.borderImage = "linear-gradient(to left, #743ad5, #0575E6) 1";
             backgroundDiv.style.borderImageSlice = 1;
+            bodyDiv.style.backgroundColor= "#C8D9F099";
         }
          else {
             backgroundDiv.style.backgroundColor = "white";
