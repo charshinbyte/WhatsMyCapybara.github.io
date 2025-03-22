@@ -30,6 +30,9 @@ body {
     margin: 0 auto;      /* Center it horizontally */
 }
 
+#population {
+    margin: 10px;
+}
 
 #result-screen {
     background-color: gray;
@@ -54,6 +57,7 @@ body {
 }
 
 #result {
+    margin-top: 3%;
     font-family: 'VT323', monospace;
     display: inline-block;
     padding: 10px;
@@ -86,6 +90,7 @@ body {
     display: flex;
     justify-content: space-between;
     margin-top: 25px;
+
 }
 
 .compatibility-container p {
@@ -93,19 +98,19 @@ body {
     background-color: #e4e4e4c4;
     font-size: 18px;
     padding: 3px;
-    text-align: center;
-    margin: 0 auto; /* Center with auto margins */
-    margin-left: 30px;
-    margin-right: 30px;
+    width: 100%;
+    /* text-align: center; */
+    margin: 0 auto; 
+    margin-left: 15%;
+    margin-right: 15%;
 }
 
 .compatible-img{
-    width: 17ch; 
-    max-width: 250px; /* Limit max width */
+    width: 90%; 
+    /* max-width: 250px; Limit max width */
     margin-top: 10px;
     image-rendering: pixelated;
-    margin-left: 10px;
-    margin-right: 10px;
+
 
 }
 #start-btn {
