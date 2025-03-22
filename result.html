@@ -19,7 +19,7 @@
             width: 500px;
             height: 780px;
             margin: 0 auto;
-            padding: 20px 0;
+            padding: 20px;
             background-color: white; /* Keep the inner color white */
             background-position: center;
             background-repeat: no-repeat;
@@ -30,10 +30,10 @@
             border-style: double;
 
             /* Gradient border */
-            /* border-image-source: linear-gradient(to left, #743ad5, #d53a9d); */
+            border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
             border-image-slice: 1;
-
-
+            border-radius: 30px; /* Rounded corners */
+            overflow: hidden; /* Prevent content from overflowing the border */
         }
 
         .result-box {
@@ -104,7 +104,20 @@
             margin-right: auto;
         }
 
+        @media (max-width: 600px) {
+            .background {
+                width: 90%; /* Use a percentage for responsiveness */
+                height: auto; /* Allow height to adjust based on content */
+            }
 
+            .result-box {
+                font-size: 40px; /* Adjust font size for smaller screens */
+            }
+
+            img {
+                width: 80%; /* Make images responsive */
+            }
+        }
 
     </style>
 
