@@ -20,8 +20,8 @@ body {
 
     width: 100%;         /* Full width of its container */
     max-width: 600px;    /* Prevents it from becoming too wide on large screens */
-    height: 95vh;       /* Full height of the viewport */
-    max-height: 100vh;   /* Ensures it doesn’t overflow the viewport height */
+    height: 100vh;       /* Full height of the viewport */
+    max-height: 100vh;   /* Ensures it doesn't overflow the viewport height */
     border-radius: 12px;
 
     display: flex;
@@ -63,35 +63,39 @@ body {
 
     width: 100%;         /* Full width of its container */
     max-width: 600px;    /* Prevents it from becoming too wide on large screens */
-    height: 95vh;       /* Full height of the viewport */
-    max-height: 100vh;   /* Ensures it doesn’t overflow the viewport height */
+    height: 100vh;       /* Full height of the viewport */
+    max-height: 100vh;   /* Ensures it doesn't overflow the viewport height */
     border-radius: 12px;
-
     display: flex;
     position: relative;
     margin-left: auto;
     margin-right: auto;
+    padding: 20px; /* Add padding to prevent content from touching edges */
+    box-sizing: border-box; /* Include padding in width calculations */
 }
 
 #question-container p{
     font-size: 20px;
+
+    background-color: #fef9e7;
+
     font-family: 'Baloo 2', sans-serif;
+    font-weight: 800;
+    border: none;
+    outline: none;
+    margin-top: 15px;
     font-weight: 900;
     color: #7d7159;
-    margin-top: 50px;
-    margin-bottom: 30px;
-    margin-left: 25px;
-    margin-right: 25px;
-    background-color: #fef9e7;
     padding: 10px;
-    padding-left: 14px;
-    padding-right: 14px;
     display: flex;
-    border: 5px solid transparent;
+    border: 2px solid transparent;
     border-radius: 12px;
-    text-align: center;
-    min-width: 510px;
-
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;         /* Full width of its container */
+    max-width: calc(100% - 20px); /* Adjust to fit within the container with padding */
+    margin-left:auto;
+    margin-right:auto;
+    box-sizing: border-box;
 }
 
 .answer-button {
@@ -104,17 +108,15 @@ body {
     background-color: #feed9d; /* optional but safe */
     color: #917d40;
     padding: 10px;
-    padding-top: 13px;
-    padding-bottom: 13px;
     display: flex;
     border: 2px solid transparent;
     border-radius: 12px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-left: 5%;
-    margin-right: 5%;
-    min-width: 510px;
-    width: 90%;
-
+    width: 100%;         /* Full width of its container */
+    max-width: calc(100% - 20px); /* Adjust to fit within the container with padding */
+    margin-left:auto;
+    margin-right:auto;
+    box-sizing: border-box; /* Include padding and border in width calculations */
 }
 
 .answer-button:hover {
