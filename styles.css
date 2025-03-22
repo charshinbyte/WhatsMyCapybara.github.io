@@ -134,3 +134,24 @@ label {
     text-align: center;
     margin-top: 20px;
 }
+
+/* Media Queries for Responsive Font Sizes */
+@media (max-width: 768px) {
+    #question-container p {
+        font-size: 18px; /* Smaller font size for tablets */
+    }
+
+    .answer-button {
+        font-size: 16px; /* Smaller font size for tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    #question-container p {
+        font-size: 16px; /* Smaller font size for mobile phones */
+    }
+
+    .answer-button {
+        font-size: 14px; /* Smaller font size for mobile phones */
+    }
+}
