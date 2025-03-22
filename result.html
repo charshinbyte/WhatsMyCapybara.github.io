@@ -16,16 +16,17 @@
         }
 
         .background {
+            min-width: 400px;
             width: 100%;         /* Full width of its container */
-            max-width: 600px;    /* Prevents it from becoming too wide on large screens */
-            height: 95vh;       /* Full height of the viewport */
+            max-width: 500px;    /* Prevents it from becoming too wide on large screens */
+            height: auto;        /* Allow height to adjust based on content */
             border-radius: 12px;
-            padding-top: 30px;
+            padding: 20px;       /* Padding for inner content */
+            background-color: white; /* Keep the inner color white */
             background-position: center;
             background-repeat: no-repeat;
             position: relative;
-            margin-left: auto;
-            margin-right: auto; 
+            margin: 0 auto; 
             border-width: 10px;
             border-style: double;
             border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
@@ -36,25 +37,24 @@
         .result-box {
             display: inline-block;
             padding: 10px;
-            font-size: 50px;
+            font-size: 48px;
             font-weight: 300;
         }
 
         img {
-            width: 250px;
+            width: 80%; 
+            max-width: 250px; /* Limit max width */
             image-rendering: pixelated;
-
         }
 
-        #population{
+        #population {
             border-radius: 5px;
-            width: 450px;
+            width: 80%; /* Make width responsive */
+            max-width: 450px; /* Limit max width */
             font-weight: 500;
             text-align: center;
-            margin-left: auto;
-            margin-right: auto;
+            margin: 10px auto; /* Center with auto margins */
             background-color: #dd4dddd;
-            margin-bottom: 30px;
         }
 
         .compatible {
@@ -66,53 +66,54 @@
             display: flex;
             justify-content: space-between;
             margin-top: 25px;
-            font-size: 24px;
-            
         }
 
-
-        p{
-            background-color: #e4e4e4c4;
-            margin:10px;
-            border-radius: 20px;
-        }
-        .compatibility-container p{
+        .compatibility-container p {
             border-radius: 5px;
             background-color: #e4e4e4c4;
-            width: 180px;
+            width: 40%; /* Make width responsive */
             padding: 3px;
             text-align: center;
-            margin-left: auto;
-            margin-right: auto;
+            margin: 0 auto; /* Center with auto margins */
         }
 
-        .compatibility-container div {
-            width: 70%;
-        }
-
-        #descbox p{
+        #descbox p {
             border: #d4d4d4b4;
-            width: 450px;
+            width: 80%; /* Make width responsive */
+            max-width: 450px; /* Limit max width */
             padding: 3px;
             text-align: center;
-            margin-left: auto;
-            margin-right: auto;
+            margin: 10px auto; /* Center with auto margins */
         }
 
-        @media (max-width: 600px) {
-            .background {
-                width: 90%; /* Use a percentage for responsiveness */
-                height: auto; /* Allow height to adjust based on content */
-            }
-
+        @media (max-width: 768px) {
             .result-box {
-                font-size: 40px; /* Adjust font size for smaller screens */
+                font-size: 50px; /* Adjust font size for smaller screens */
             }
 
-            img {
-                width: 80%; /* Make images responsive */
+            #population {
+                font-size: 5vw; /* Adjust font size for smaller screens */
+            }
+
+            .compatibility-container {
+                font-size: 3vw; /* Adjust font size for smaller screens */
             }
         }
+
+        @media (max-width: 480px) {
+            .result-box {
+                font-size: 5vw; /* Adjust font size for mobile phones */
+            }
+
+            #population {
+                font-size: 5vw; /* Adjust font size for mobile phones */
+            }
+
+            .compatibility-container {
+                font-size: 3vw; /* Adjust font size for mobile phones */
+            }
+        }
+</style
 
     </style>
 
