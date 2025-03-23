@@ -6,7 +6,7 @@ body {
     background-color: gray;
     text-align: center;
     height: 100%;
-    overflow-y: hidden;
+    /* overflow-y: hidden; */
     overflow-x: hidden;
 
 }
@@ -47,9 +47,9 @@ body {
     border-image-slice: 1; */
 
     width: 100%;         /* Full width of its container */
-    max-width: 500px;    /* Prevents it from becoming too wide on large screens */
+    max-width: 500px;
     height: 100%;       /* Full height of the viewport */
-    max-height: 650px;   /* Ensures it doesn't overflow the viewport height */
+    /* max-height: 650px;   Ensures it doesn't overflow the viewport height */
     border-radius: 12px;
 
     display: flex;
@@ -117,10 +117,10 @@ body {
 }
 
 .compatible-img{
-    height: 15vh; 
+    height: 5lh; 
     margin-top: 10px;
     image-rendering: pixelated;
-
+    margin-bottom: 10px;
 
 }
 #start-btn {
