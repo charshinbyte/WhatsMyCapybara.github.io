@@ -31,7 +31,9 @@ body {
 }
 
 #population {
-    margin: 10px;
+    /* border-style: dashed; */
+    margin-top: 2px;
+    font-size: 24px;
 }
 
 #result-screen {
@@ -46,7 +48,7 @@ body {
 
     width: 100%;         /* Full width of its container */
     max-width: 500px;    /* Prevents it from becoming too wide on large screens */
-    height: 100vh;       /* Full height of the viewport */
+    height: 100%;       /* Full height of the viewport */
     max-height: 650px;   /* Ensures it doesn't overflow the viewport height */
     border-radius: 12px;
 
@@ -67,23 +69,25 @@ body {
 
 .result-box {
     display: inline-block;
-    padding: 10px;
+    padding: 5px;
     font-size: 48px;
     font-weight: 300;
 }
 
 #result-image {
-    width: 60cqw; 
+    width: 50vh; 
     max-width: 250px; /* Limit max width */
     image-rendering: pixelated;
+    /* border-style:dashed; */
 }
 
 .traits {
-    margin: 10px;
     border-radius: 5px;
     text-align: center;
     background-color: #e4e4e4c4;
-    width: 30ch;
+    width: 20lh;
+    font-size: 15px;
+    margin-top: 0;
 }
 
 .compatibility-container {
@@ -101,8 +105,6 @@ body {
     /* border: green;
     border-style: dotted; */
     margin-left: 10%;
-
-
 }
 
 .compatibility-container p {
@@ -110,14 +112,12 @@ body {
     background-color: #e4e4e4c4;
     font-size: 15px;
     padding: 3px;
-    width: 18ch;
+    width: 7lh;
     margin: 0 auto;
-
 }
 
 .compatible-img{
-    width: 90%; 
-    /* max-width: 250px; Limit max width */
+    height: 15vh; 
     margin-top: 10px;
     image-rendering: pixelated;
 
