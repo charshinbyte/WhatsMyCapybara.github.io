@@ -5,38 +5,91 @@ function startQuiz() {
 
 const questions = [
     {
-        question: "Greetings Traveller, After a long journey, what’s your preferred way to spend an evening in my tavern?",
+        question: "The tavern is alive with music and laughter as a festival begins. How do you join the merriment?",
         options: [
-            { answer: "I’d enjoy a good chat with the locals, share tales of my travels, and perhaps make a few new friends!", role: "E" },
-            { answer: "I’d rather sit by the hearth, sip on some ale, and reflect quietly on the road behind me.", role: "I" },
-        ]
-    },    
-    
-    {
-        question: "An old stranger approaches you in the middle of the rainy night, He pleads for help finding his lost dog in the woods. Do you…",
-        options: [
-            { answer: "Weigh the situation carefully, considering the risks and rewards before deciding whether to help.", role: "T" },
-            { answer: "Feel a deep sense of empathy, and despite the danger, you can’t turn away from offering your aid.", role: "F" },
+            { answer: "Jump into the dancing, mingle with everyone, and lead the charge in festive cheer!", role: "E" },
+            { answer: "Find a quiet corner with a drink, observing the joy from a comfortable distance.", role: "I" },
         ]
     },
-
     {
-        question: "Relucantly, searching for the dog in the wood you stumble upon an enchanted map leading to a hidden treasure. How do you proceed?",
+        question: "A noble offers you a timed contract with strict goals. Do you...",
         options: [
-            { answer: "Get lost in the possibilities, imagining what treasures lie, how the map might hold secrets of a forgotten age.", role: "N" },
-            { answer: "Carefully inspect the symbols, searching for practical clues about its location and the tangible truth behind the map.", role: "S" },
+            { answer: "Accept—it’s structured and you know exactly what’s expected to succeed.", role: "J" },
+            { answer: "Decline—I prefer flexibility and freedom to choose my own path.", role: "P" },
         ]
     },
-
     {
-        question: "The road splits two ways, you could easily get lost in these conditions, How do you proceed?",
+        question: "You're offered a high reward to betray a companion. What do you do?",
         options: [
-            { answer: "You travel with no set destination in mind, trusting that adventure will find you, and that you can make decisions as you go", role: "P" },
-            { answer: "You plan every step carefully, ensuring that each turn is noted and that you arrive safely on time.", role: "J" },
+            { answer: "Calculate the pros and cons, but loyalty has value too—it’s a matter of strategy.", role: "T" },
+            { answer: "Refuse without hesitation—bonds forged on the road are worth more than gold.", role: "F" },
+        ]
+    },
+    {
+        question: "You’re invited to join a band of adventurers setting out at dawn. How do you feel?",
+        options: [
+            { answer: "Excited! Meeting new faces and sharing in the journey sounds like a grand time.", role: "E" },
+            { answer: "Wary. I prefer smaller groups or even traveling alone, where I can move at my own pace.", role: "I" },
+        ]
+    },
+    {
+        question: "While exploring ruins, you discover an artifact. What excites you most?",
+        options: [
+            { answer: "Learning about its origin, craftsmanship, and tangible history.", role: "S" },
+            { answer: "Wondering about the legend behind it, and how it fits into a greater myth.", role: "N" },
+        ]
+    },
+    {
+        question: "In the middle of a dungeon crawl, plans suddenly change. How do you react?",
+        options: [
+            { answer: "Quickly adapt, but work to regain order and steer the party back to a clear plan.", role: "J" },
+            { answer: "Embrace the chaos—change is just another part of the adventure.", role: "P" },
+        ]
+    },
+    {
+        question: "You’re tasked with solving a riddle to open an ancient door. What’s your approach?",
+        options: [
+            { answer: "Examine the carvings and surroundings for concrete clues that point to a solution.", role: "S" },
+            { answer: "Consider the symbolic meaning behind the riddle, thinking outside the box.", role: "N" },
+        ]
+    },
+    {
+        question: "Your party argues over which quest to take. How do you help decide?",
+        options: [
+            { answer: "Analyze the risks and rewards of each quest, aiming for the most efficient choice.", role: "T" },
+            { answer: "Listen to everyone’s hopes and concerns, seeking a path that feels right to all.", role: "F" },
+        ]
+    },
+    {
+        question: "In the heart of battle, how do you thrive?",
+        options: [
+            { answer: "By coordinating with allies, calling out strategies, and inspiring those around me.", role: "E" },
+            { answer: "By focusing inward, acting with precision and letting my actions speak louder than words.", role: "I" },
+        ]
+    },
+    {
+        question: "A mysterious potion seller offers you a brew. Do you...",
+        options: [
+            { answer: "Ask detailed questions about the ingredients and effects before trying anything.", role: "S" },
+            { answer: "Speculate on the magical origins, imagining how it might unlock hidden potential.", role: "N" },
+        ]
+    },
+    {
+        question: "A fellow traveler is accused of theft. The evidence is unclear. What’s your response?",
+        options: [
+            { answer: "Investigate objectively, weighing all facts before making a fair decision.", role: "T" },
+            { answer: "Consider the emotions and intentions involved, aiming for a compassionate resolution.", role: "F" },
+        ]
+    },
+    {
+        question: "You’re planning a journey across the realm. What’s your preparation style?",
+        options: [
+            { answer: "Draft a detailed itinerary, ensuring all supplies and stops are accounted for.", role: "J" },
+            { answer: "Pack light and let the road unfold—spontaneity leads to the best stories.", role: "P" },
         ]
     }
-    // Add more questions as needed...
 ];
+
 
 let currentQuestionIndex = 0;
 let answers = {

@@ -31,11 +31,13 @@
             <div class="most-compatible">
                 <p>Most Compatible</p>
                 <img class="compatible-img" src="" alt="Most Compatible Image">
+                <div id="most-compatible-name"></div>
             </div>
 
             <div class="least-compatible">
                 <p>Least Compatible</p>
                 <img class="compatible-img" src="" alt="Least Compatible Image">
+                <div id="least-compatible-name"></div>
             </div>
         </div>
 
@@ -160,10 +162,13 @@
 
         if (mostCompatible) {
             document.querySelector(".compatibility-container .most-compatible img").src = `MBTIS/${mostCompatible}.png`;
+            document.getElementById("most-compatible-name").textContent = `${names[mostCompatible]}!`
         }
 
         if (leastCompatible) {
             document.querySelector(".compatibility-container .least-compatible img").src = `MBTIS/${leastCompatible}.png`;
+            document.getElementById("least-compatible-name").textContent = `${names[leastCompatible]}!`
+
         }
 
         // Change background color based on result

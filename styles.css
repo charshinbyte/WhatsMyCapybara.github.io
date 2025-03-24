@@ -33,7 +33,7 @@ body {
 #population {
     /* border-style: dashed; */
     margin-top: 2px;
-    font-size: 24px;
+    font-size: 28px;
 }
 
 #result-screen {
@@ -47,7 +47,7 @@ body {
     border-image-slice: 1; */
 
     width: 100%;         /* Full width of its container */
-    max-width: 500px;
+    max-width: 600px;
     height: 100%;       /* Full height of the viewport */
     /* max-height: 650px;   Ensures it doesn't overflow the viewport height */
     border-radius: 12px;
@@ -85,8 +85,8 @@ body {
     border-radius: 5px;
     text-align: center;
     background-color: #e4e4e4c4;
-    width: 20lh;
-    font-size: 15px;
+    width: 18lh;
+    font-size: 20px;
     margin-top: 0;
 }
 
@@ -100,6 +100,8 @@ body {
     /* border: green;
     border-style: dotted; */
     margin-right: 10%;
+    margin-bottom: 20px;
+    
 }
 .least-compatible{
     /* border: green;
@@ -110,7 +112,7 @@ body {
 .compatibility-container p {
     border-radius: 5px;
     background-color: #e4e4e4c4;
-    font-size: 15px;
+    font-size: 20px;
     padding: 3px;
     width: 7lh;
     margin: 0 auto;
@@ -120,7 +122,6 @@ body {
     height: 5lh; 
     margin-top: 10px;
     image-rendering: pixelated;
-    margin-bottom: 10px;
 
 }
 #start-btn {
@@ -164,10 +165,17 @@ body {
     box-sizing: border-box; /* Include padding in width calculations */
 }
 
+#questions{
+
+    margin-left: auto;
+    margin-right: auto;
+
+}
 #question-container p{
     font-size: 20px;
 
     background-color: #fef9e7;
+    text-align: center;
 
     font-family: 'Baloo 2', sans-serif;
     font-weight: 800;
@@ -183,9 +191,9 @@ body {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     width: 100%;         /* Full width of its container */
     max-width: calc(100% - 20px); /* Adjust to fit within the container with padding */
+    box-sizing: border-box;
     margin-left:auto;
     margin-right:auto;
-    box-sizing: border-box;
 }
 
 .answer-button {
